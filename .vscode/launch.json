@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootLibraryApplication<spring-boot-library>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.eshghi.spring_boot_library.SpringBootLibraryApplication",
+            "projectName": "spring-boot-library",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
