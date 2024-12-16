@@ -1,8 +1,7 @@
 
 import './App.css'
-import { Carousel } from './layout/HomePage/components/Carousel'
-import { ExploreTopBooks } from './layout/HomePage/components/ExploreTopBooks'
-import { Heros } from './layout/HomePage/components/Heros'
+import { HomePage } from './layout/HomePage/HomePage'
+import { Footer } from './layout/NavbarAndFooter/Footer'
 import Navbar from './layout/NavbarAndFooter/Navbar'
 
 function App() {
@@ -10,9 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <ExploreTopBooks />
-      <Carousel />
-      <Heros/>
+     
+     <HomePage />
+     <Footer />
     </>
   )
 }
