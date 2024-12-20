@@ -8,7 +8,6 @@ export const HomePage = () => {
     return (
         <>
             <ExploreTopBooks/>
-            <Outlet />
             <Carousel/>
             <Heros/>
             <LibraryServices/>

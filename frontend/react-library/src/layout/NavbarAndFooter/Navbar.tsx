@@ -1,12 +1,15 @@
+import { useOktaAuth } from "@okta/okta-react";
 import { Link, NavLink } from "react-router-dom";
+import { SpinnerLoading } from "../Utils/SpinnerLoading";
 
 export const Navbar = () => {
 
+  const { oktaAuth, authState } = useOktaAuth();
 
- 
-
-
-
+  if (!authState) {
+    return <SpinnerLoading />
+  }
+  const handleLogout = async () => oktaAuth.signOut();
   return (
     <nav className='navbar navbar-expand-lg navbar-dark main-color py-3'>
       <div className='container-fluid'>
@@ -31,16 +34,16 @@ export const Navbar = () => {
                 <NavLink className='nav-link' to='/shelf'>Shelf</NavLink>
               </li>
             }
-            { true &&
+            {true &&
               <li className='nav-item'>
                 <NavLink className='nav-link' to='/admin'>Admin</NavLink>
               </li>
             }
           </ul>
           <ul className='navbar-nav ms-auto'>
-            {  true ?          <li className='nav-item m-1'>
-                <Link type='button' className='btn btn-outline-light' to='/login'>Sign in</Link>
-              </li>
+            {!authState.isAuthenticated ? <li className='nav-item m-1'>
+              <Link type='button' className='btn btn-outline-light' to='/login'>Sign in</Link>
+            </li>
               :
               <li>
                 <button className='btn btn-outline-light' >Logout</button>
