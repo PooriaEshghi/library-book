@@ -11,7 +11,10 @@ import { SearchBooksPage } from './layout/SearchBooksPage/SearchBooksPage';
 import { ReviewListPage } from './layout/ReviewListPage/ReviewListPage';
 import { BookCheckoutPage } from './layout/BookCheckoutPage/BookCheckoutPage';
 import { Footer } from './layout/NavbarAndFooter/Footer';
+import { ShelfPage } from './layout/ShelfPage/ShelfPage';
+// import LoginWidget from './LoginWidget';
 import LoginWidget from './Auth/LoginWidget';
+// import LoginWidget from './LoginWidget.jsx';
 
 
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -43,7 +46,7 @@ export const App = () => {
               element={<LoginWidget config={oktaConfig} />}
             />
             <Route path='/login/callback' element={<LoginCallback />} />
-            {/* <Route
+             <Route
               path='/shelf'
               element={
                 <SecureRoute>
@@ -51,7 +54,7 @@ export const App = () => {
                 </SecureRoute>
               }
             />
-            <Route
+            {/*<Route
               path='/messages'
               element={
                 <SecureRoute>
