@@ -12,9 +12,11 @@ import { ReviewListPage } from './layout/ReviewListPage/ReviewListPage';
 import { BookCheckoutPage } from './layout/BookCheckoutPage/BookCheckoutPage';
 import { Footer } from './layout/NavbarAndFooter/Footer';
 import { ShelfPage } from './layout/ShelfPage/ShelfPage';
+import { MessagesPage } from './layout/MessagesPage/MessagesPage';
+import LoginWidget from './LoginWidget.jsx';
+import { ManageLibraryPage } from './layout/ManageLibraryPage/ManageLibraryPage.js';
 // import LoginWidget from './LoginWidget';
-import LoginWidget from './Auth/LoginWidget';
-// import LoginWidget from './LoginWidget.jsx';
+// import LoginWidget from './Auth/LoginWidget';
 
 
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -54,7 +56,7 @@ export const App = () => {
                 </SecureRoute>
               }
             />
-            {/*<Route
+            <Route
               path='/messages'
               element={
                 <SecureRoute>
@@ -69,7 +71,7 @@ export const App = () => {
                   <ManageLibraryPage />
                 </SecureRoute>
               }
-            /> */}
+            /> 
           </Routes>
         </div>
         <Footer />
