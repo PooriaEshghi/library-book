@@ -1,4 +1,4 @@
-package com.eshghi.spring_boot_library.service;
+package com.eshghi.spring_boot_library.requestmodels;
 
 import lombok.Data;
 

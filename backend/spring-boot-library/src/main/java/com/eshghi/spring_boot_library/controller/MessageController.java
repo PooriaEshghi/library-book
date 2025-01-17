@@ -4,7 +4,7 @@ package com.eshghi.spring_boot_library.controller;
 import org.springframework.web.bind.annotation.*;
 
 import com.eshghi.spring_boot_library.entity.Message;
-import com.eshghi.spring_boot_library.service.AdminQuestionRequest;
+import com.eshghi.spring_boot_library.requestmodels.AdminQuestionRequest;
 import com.eshghi.spring_boot_library.service.MessageService;
 import com.eshghi.spring_boot_library.utils.ExtractJWT;
 

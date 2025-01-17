@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.eshghi.spring_boot_library.dao.MessageRepository;
 import com.eshghi.spring_boot_library.entity.Message;
+import com.eshghi.spring_boot_library.requestmodels.AdminQuestionRequest;
 
 import jakarta.transaction.Transactional;
 
